@@ -39,7 +39,6 @@ class WebSocketProxyServlet extends WebSocketServlet {
   }
 
   def doWebSocketConnect(request:HttpServletRequest, protocol:String):WebSocket = {
-    println("Got a connection for " + host + " " + port)
     WebSocketProxy(getInitParameter("host"), getInitParameter("port").toInt);
   }
 }
