@@ -3,7 +3,7 @@ WSProxy provides a Servlet that proxies a WebSocket to a Socket
 Usage
 =====
 
-To configure the Servlet, add the following to src/main/webapp/WEB-INF/web.xml
+To configure the Servlet, add the following to `src/main/webapp/WEB-INF/web.xml`
 
     <servlet>
       <servlet-name>WebSocketProxy</servlet-name>

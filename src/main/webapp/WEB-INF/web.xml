@@ -10,7 +10,7 @@
     <load-on-startup>1</load-on-startup>
     <init-param>
       <param-name>host</param-name>
-      <param-value>localhost</param-value>
+      <param-value>irc.collapse.io</param-value>
     </init-param>
     <init-param>
       <param-name>port</param-name>
