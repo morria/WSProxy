@@ -28,7 +28,7 @@ import org.eclipse.jetty.websocket.WebSocketServlet
  *    </servlet>
  *    <servlet-mapping>
  *      <servlet-name>WebSocketProxy</servlet-name>
- *      <url-pattern>/proxy</url-pattern>
+ *      <url-pattern>/</url-pattern>
  *    </servlet-mapping>
  * ```
  */
@@ -38,6 +38,8 @@ class WebSocketProxyServlet extends WebSocketServlet {
     getServletContext().getNamedDispatcher("default").forward(request,response);
   }
 
-  def doWebSocketConnect(request:HttpServletRequest, protocol:String):WebSocket =
+  def doWebSocketConnect(request:HttpServletRequest, protocol:String):WebSocket = {
+    println("Got a connection for " + host + " " + port)
     WebSocketProxy(getInitParameter("host"), getInitParameter("port").toInt);
+  }
 }

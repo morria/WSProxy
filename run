@@ -1,0 +1,2 @@
+#!/bin/sh
+mvn -T4.0C jetty:start -Djetty.port=6767
