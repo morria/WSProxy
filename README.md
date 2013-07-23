@@ -37,6 +37,6 @@ Running
 
 To run locally, you may execute
 
-    ./run.sh
+    ./run
 
-This will build the jar and run Jetty on port 8080.
+This will build the jar and run Jetty on port 6767.
